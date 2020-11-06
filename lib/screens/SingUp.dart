@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter/foundation.dart';
 import 'package:helloworld/Providers/UserPrv.dart';
 import 'package:helloworld/models/user.dart';
+import 'package:helloworld/screens/login.dart';
 import 'package:helloworld/screens/welcome.dart';
 import 'package:helloworld/utils/string_admin.dart';
 
@@ -37,16 +38,16 @@ class _SingUpState extends State<SingUp> {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 255, 249, 239),
       appBar: AppBar(
-        backgroundColor: Colors.orange,
+        backgroundColor:Color(0xfff44336),
         title: Row(
-          children: [Text('Sing Up')],
+          children: [Text('SingUp')],
         ),
       leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => Welcome()),
+              MaterialPageRoute(builder: (context) => Login()),
             );
           },
         ),
@@ -349,8 +350,8 @@ class LogginButton extends StatelessWidget {
           RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
         ),
         backgroundColor: MaterialStateProperty.all<Color>(
-         // Color(0xffFC4F32),
-         Colors.orange
+          Color(0xffFC4F32),
+         
         ),
       ),
     );

@@ -6,6 +6,7 @@ import 'package:helloworld/screens/Dashboard.dart';
 
 
 import 'package:helloworld/screens/SingUp.dart';
+import 'package:helloworld/screens/welcome.dart';
 import 'package:helloworld/utils/string_admin.dart';
 
 import 'package:provider/provider.dart';
@@ -30,9 +31,18 @@ class _LoginState extends State<Login> {
     return Scaffold(
       backgroundColor:Color.fromARGB(255, 255, 249, 239),
       appBar: AppBar(
-        backgroundColor: Colors.orange,
+        backgroundColor: Color(0xfff44336),
         title: Row(
           children: [Text('Login')],
+        ),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Welcome()),
+            );
+          },
         ),
       ),
       body: SingleChildScrollView(
@@ -278,7 +288,7 @@ class LogginButton extends StatelessWidget {
         ),
         backgroundColor: MaterialStateProperty.all<Color>(
          // Color.fromRGBO(252, 79, 50, 1),
-          Colors.orange,
+          Color(0xfff44336),
         ),
       ),
     );

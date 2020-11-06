@@ -78,7 +78,7 @@ class Welcome extends StatelessWidget {
                 height: 60.0,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10)),
-                color: Colors.orange,
+                color: Color(0xfff44336),
                 child: Text(
                   'INICIA AHORA',
                   style: TextStyle(

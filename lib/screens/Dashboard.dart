@@ -32,6 +32,7 @@ class _DashboardState extends State<Dashboard> {
                   height: 200,
                   decoration: BoxDecoration(
                     color: Color(0xfff44336),
+                    
                     border: Border.all(
                       width: 5,
                       color: Color(0xfff44336),
